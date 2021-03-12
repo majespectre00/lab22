@@ -1,6 +1,15 @@
 #include<iostream>
+#include<set>
 
 using namespace std;
+
+int count (int normalarr [], int N){
+	set<int> counter;
+	for(int i = 0; i < N;i++){
+		counter.insert(normalarr[i]);
+	}
+	return counter.size();
+}
 
 //Write function count() here.
 
